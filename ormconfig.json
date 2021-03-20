@@ -1,0 +1,18 @@
+{
+	"type": "mysql",
+	"host": "sql404.main-hosting.eu",
+	"port": 3306,
+	"username": "u381405406_econcri",
+	"password": "Econcri2021",
+	"database": "u381405406_econcri",
+	"migrations": [
+		"./src/database/migrations/*"
+	],
+	"entities": [
+		"./src/models/*.ts"
+	],
+	"cli": {
+		"migrationsDir": "./src/database/migrations"
+	}
+ }
+	
