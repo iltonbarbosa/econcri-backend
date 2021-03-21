@@ -2,9 +2,10 @@
   "name": "econcri-backend",
   "version": "1.0.0",
   "main": "server.js",
+  "type":"module",
   "scripts": {
     "build": "tsc",
-    "start": "node dist/server.js",
+    "start": "node server.js",
     "dev": "ts-node-dev --transpile-only --ignore-watch ./node_modules/ ./src/server.ts",
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
   },

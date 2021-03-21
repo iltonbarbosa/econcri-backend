@@ -1,6 +1,6 @@
 import express from 'express';
 import 'express-async-errors';
-import errorHandler from './errors/handle'
+import errorHandler from './errors/handle';
 import cors from 'cors';
 
 import './database';
