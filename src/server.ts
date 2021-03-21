@@ -4,7 +4,7 @@ import errorHandler from './errors/handle';
 import cors from 'cors';
 
 import './database';
-import sessionsRoutes from '../src/sessions.routes';
+import sessionsRoutes from './sessions.routes';
 import routes from './routes';
 
 const app = express();

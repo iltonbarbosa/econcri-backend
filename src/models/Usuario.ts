@@ -1,4 +1,4 @@
-import { Entity, Column, PrimaryGeneratedColumn} from 'typeorm/browser';
+import { Entity, Column, PrimaryGeneratedColumn} from 'typeorm';
 
 @Entity('usuario')
 export default class Usuario {

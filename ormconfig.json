@@ -9,7 +9,8 @@
 		"./src/database/migrations/*"
 	],
 	"entities": [
-		"./src/models/*.ts"
+		"./src/models/*.ts",
+        "./dist/models/*.js"
 	],
 	"cli": {
 		"migrationsDir": "./src/database/migrations"
