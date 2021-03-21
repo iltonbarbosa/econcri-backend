@@ -1,6 +1,6 @@
 import express from 'express';
 import 'express-async-errors';
-const errorHandler = require('../src/errors/handle.ts');
+import errorHandler from './errors/handle'
 import cors from 'cors';
 
 import './database';
