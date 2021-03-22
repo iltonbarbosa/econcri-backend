@@ -2,17 +2,12 @@
   "name": "econcri-backend",
   "version": "1.0.0",
   "main": "server.js",
-  "type": "module",
   "scripts": {
     "build": "tsc",
-    "start": "ts-node ./src/server.ts",
+    "start": "node src/server.js",
     "dev": "ts-node-dev --transpile-only --ignore-watch ./node_modules/ ./src/server.ts",
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
   },
-  "keywords": [
-    "example",
-    "heroku"
-  ],
   "author": "José Ilton Soares Barbosa",
   "license": "ISC",
   "description": "Gestão da economia criativa",
