@@ -11,7 +11,6 @@
   "author": "José Ilton Soares Barbosa",
   "license": "ISC",
   "description": "Gestão da economia criativa",
-  "type": "module",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
