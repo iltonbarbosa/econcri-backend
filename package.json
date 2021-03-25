@@ -2,13 +2,12 @@
   "name": "econcri-backend",
   "version": "1.0.0",
   "main": "server.js",
-
   "scripts": {
     "build": "tsc",
     "start": "node src/server.js",
     "dev": "ts-node-dev --transpile-only --ignore-watch ./node_modules/ ./src/server.ts",
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js",
-	"heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build"
   },
   "author": "José Ilton Soares Barbosa",
   "license": "ISC",
