@@ -5,40 +5,40 @@ import Categoria from './Categoria'
 export default class Cadastro {
 
 	@PrimaryGeneratedColumn('increment')
-	idcadastro: string;
+	idcadastro!: string;
 
 	@Column()
 	@OneToOne(() => Categoria, categoria => categoria.idcategoria)
-	@JoinColumn({name: 'idcategoria'})
-	idcategoria: string;
+	@JoinColumn({ name: 'idcategoria' })
+	idcategoria!: string;
 
 	@Column()
-	idusuario: string;
+	idusuario!: string;
 
 	@Column()
-	nome: string;
+	nome!: string;
 
 	@Column()
-	cidade: string;
+	cidade!: string;
 
 	@Column()
-	tempo_atuacao: string;
+	tempo_atuacao!: string;
 
 	@Column()
-	latitude: number;
+	latitude!: number;
 
 	@Column()
-	longitude: number;
+	longitude!: number;
 
 	@Column()
-	nome_contato: string;
+	nome_contato!: string;
 
 	@Column()
-	telefone_contato: string;
+	telefone_contato!: string;
 
 	@Column()
-	email_contato: string;
+	email_contato!: string;
 
 	@Column()
-	dtcadastro: Date;
+	dtcadastro!: Date;
 }

@@ -4,11 +4,11 @@ import { Entity, Column, PrimaryGeneratedColumn} from 'typeorm'
 export default class Empresa {
 
 	@PrimaryGeneratedColumn('increment')
-	idempresa: string;
+	idempresa!: string;
 
 	@Column()
-	idcadastro: string;
+	idcadastro!: string;
 
 	@Column()
-	cnpj: string;
+	cnpj!: string;
 }

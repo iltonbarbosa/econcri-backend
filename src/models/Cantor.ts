@@ -4,15 +4,15 @@ import { Entity, Column, PrimaryGeneratedColumn} from 'typeorm'
 export default class Cantor {
 
 	@PrimaryGeneratedColumn('increment')
-	idcantor: string;
+	idcantor!: string;
 
 	@Column()
-	idcadastro: string;
+	idcadastro!: string;
 
 	@Column()
-	estilo: string;
+	estilo!: string;
 
 	@Column()
-	autoral_cover: string;
+	autoral_cover!: string;
 
 }

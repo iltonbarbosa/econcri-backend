@@ -4,16 +4,16 @@ import { Entity, Column, PrimaryGeneratedColumn} from 'typeorm'
 export default class Release {
 
 	@PrimaryGeneratedColumn('increment')
-	idrelease: string;
+	idrelease!: string;
 
 	@Column()
-	idcadastro: string;
+	idcadastro!: string;
 
 	@Column()
-	release: string;
+	release!: string;
 
 	@Column()
-	linkportfolio: string;
+	linkportfolio!: string;
 
 
 }

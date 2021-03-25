@@ -4,11 +4,11 @@ import { Entity, Column, PrimaryGeneratedColumn} from 'typeorm'
 export default class Linkvideo {
 
 	@PrimaryGeneratedColumn('increment')
-	idlinkvideo: string;
+	idlinkvideo!: string;
 
 	@Column()
-	idcadastro: string;
+	idcadastro!: string;
 
 	@Column()
-	link: string;
+	link!: string;
 }

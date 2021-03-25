@@ -4,15 +4,15 @@ import { Entity, Column, PrimaryGeneratedColumn} from 'typeorm'
 export default class Redesocial {
 
 	@PrimaryGeneratedColumn('increment')
-	idredesocial: string;
+	idredesocial!: string;
 
 	@Column()
-	idcadastro: string;
+	idcadastro!: string;
 
 	@Column()
-	nome: string;
+	nome!: string;
 
 	@Column()
-	link: string;
+	link!: string;
 
 }

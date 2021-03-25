@@ -5,12 +5,12 @@ import Cadastro  from "./Cadastro";
 export default class Categoria {
 
 	@PrimaryGeneratedColumn('increment')
-	idcategoria: string;
+	idcategoria!: string;
 
 	@Column()
-	descricao: string;
+	descricao!: string;
 
-	@OneToOne(type => Cadastro, cadastro =>cadastro.idcategoria)
-	@JoinColumn({name: 'idcategoria'})
-	cadastro: Cadastro;
+	@OneToOne(type => Cadastro, cadastro => cadastro.idcategoria)
+	@JoinColumn({ name: 'idcategoria' })
+	cadastro!: Cadastro;
 }

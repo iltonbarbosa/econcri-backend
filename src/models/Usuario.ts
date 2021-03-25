@@ -4,23 +4,23 @@ import { Entity, Column, PrimaryGeneratedColumn} from 'typeorm';
 export default class Usuario {
 
 	@PrimaryGeneratedColumn('increment')
-	idusuario: string;
+	idusuario!: string;
 
 	@Column()
-	nome: string;
+	nome!: string;
 
 	@Column()
-	email: string;
+	email!: string;
 
 	@Column()
-	senha: string;
+	senha!: string;
 
 	@Column()
-	perfil: number;
+	perfil!: number;
 
 	@Column()
-	dtcadastro: string;
+	dtcadastro!: string;
 
 	@Column()
-	dadosconfirmados: boolean;
+	dadosconfirmados!: boolean;
 }

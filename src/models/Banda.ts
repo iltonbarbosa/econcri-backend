@@ -4,21 +4,21 @@ import { Entity, Column, PrimaryGeneratedColumn} from 'typeorm'
 export default class Banda {
 
 	@PrimaryGeneratedColumn('increment')
-	idbanda: string;
+	idbanda!: string;
 
 	@Column()
-	idcadastro: string;
+	idcadastro!: string;
 
 	@Column()
-	estilo: string;
+	estilo!: string;
 
 	@Column()
-	autoral_cover: string;
+	autoral_cover!: string;
 
 	@Column()
-	num_integrantes: string;
+	num_integrantes!: string;
 
 	@Column()
-	nome_integrantes: string;
+	nome_integrantes!: string;
 
 }
