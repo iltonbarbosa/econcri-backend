@@ -4,18 +4,18 @@ import { Entity, Column, PrimaryGeneratedColumn} from 'typeorm'
 export default class Agenda {
 
 	@PrimaryGeneratedColumn('increment')
-	idagenda: string;
+	idagenda!: string;
 
 	@Column()
-	idcadastro: string;
+	idcadastro!: string;
 
 	@Column()
-	dtagenda: Date;
+	dtagenda!: Date;
 
 	@Column()
-	hora: string;
+	hora!: string;
 
 	@Column()
-	local: string;
+	local!: string;
 
 }
