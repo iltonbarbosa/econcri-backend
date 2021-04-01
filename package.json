@@ -2,10 +2,9 @@
   "name": "econcri-backend",
   "version": "1.0.0",
   "main": "server.js",
-  "type":"module",
   "scripts": {
-    "build": "tsc",
-    "start": "node src/server.js",
+    "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files",
+    "start": "node server.js",
     "dev": "ts-node-dev --transpile-only --ignore-watch ./node_modules/ ./src/server.ts",
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js",
     "heroku-postbuild": "npm run build"
@@ -27,13 +26,22 @@
     "yup": "^0.32.9"
   },
   "devDependencies": {
-    "@types/express": "^4.17.11",
+    "@babel/cli": "^7.13.14",
+    "@babel/core": "^7.13.14",
+    "@babel/node": "^7.13.13",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/plugin-proposal-decorators": "^7.13.5",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-typescript": "^7.13.0",
     "@types/bcryptjs": "^2.4.2",
     "@types/cors": "^2.8.8",
+    "@types/express": "^4.17.11",
     "@types/jsonwebtoken": "^8.5.0",
     "@types/yup": "^0.29.9",
-    "ts-node-dev": "^1.0.0",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "babel-plugin-transform-typescript-metadata": "^0.3.2",
     "ts-node": "^9.1.1",
+    "ts-node-dev": "^1.0.0",
     "typescript": "^4.2.3"
   },
   "engines": {
