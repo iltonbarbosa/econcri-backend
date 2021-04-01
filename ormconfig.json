@@ -9,8 +9,8 @@
 		"./src/database/migrations/*"
 	],
 	"entities": [
-		"./src/models/*.ts",
-        "./dist/models/*.js"
+		"./src/models//*.ts",
+        "./dist/models//*.js"
 	],
 	"cli": {
 		"migrationsDir": "./src/database/migrations"
